@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - FoxFizz</title>
+
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+
+  <style>
+    #nav-icon {
+      margin-top: 15px;;
+      margin-right: 15px;
+      -webkit-transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #nav-icon:hover {
+      -ms-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    #nav-icon i {
+      font-size: 3rem;
+    }
+
+    #home {
+      padding-top: 170px;
+      background: black url("images/bg.jpg") center no-repeat fixed;
+      height: 700px;
+    }
+
+    #home h3 {
+      margin-top: 30px;
+      color: #fff;
+      font-family: Courier, Roboto;
+      line-height: 50px;
+    }
+
+    h3:last-child {
+      
+      background-color: red;
+    }
+
+    #home hr {
+      max-width: 100px;
+      height: 2px;
+      background-color: #fff;
+    }
+
+    .explore {
+      margin-top: 100px;
+    }
+
+    .hero-btn {
+      position: absolute;
+      top: calc(700px - 28px);
+      left: calc(50% - 28px);
+    }
+
+    #projects {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 50px;
+    }
+
+    #projects .card {
+      margin-top: 20px;
+
+      -webkit-transition: transform 0.5s;
+      transition: transform 0.5s;
+    }
+
+    #projects .card:hover {
+      -ms-transform: translate(0,-20px);
+      -webkit-transform: translate(0,-20px);
+      transform: translate(0,-20px);
+    }
+
+    #projects .card:hover i.large {
+       -ms-transform: scale(2);
+       -webkit-transform: scale(2);
+       transform: scale(2);
+    }
+
+    #projects .card:hover .halfway-fab i {
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+
+    #projects .card .card-image {
+      height: 250px;
+    }
+
+    #projects .card .card-image i.large {
+      line-height: 200px;
+      -webkit-transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    #projects .card .card-image .halfway-fab {
+      border: 1px solid #fff;
+    }
+
+    #projects .card .halfway-fab i {
+      -webkit-transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .border-1-white {
+      border: 1px solid #fff;
+    }
+
+    .close-side-nav {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+
+    .tt {
+      color: #1da1f2 !important;
+    }
+
+    .gh {
+      color: #211f1f !important;
+    }
+
+    .fb {
+      color: #3b5998 !important;
+    }
+
+    .li {
+      color: #007bb6 !important;
+    }
+  </style>
+</head>
+<body>
+  <a id="nav-icon" href="#" data-activates="nav-slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
+
+  <ul id="nav-slide-out" class="side-nav">
+    <li><div class="userView">
+      <a href="" class="close-side-nav"><i class="material-icons white-text">close</i></a>
+      <div class="background">
+        <img src="images/bg.jpg">
+      </div>
+      <a href=""><img class="circle border-1-white" src="images/avatar.jpg"></a>
+      <a href=""><span class="white-text name">Phong Phan</span></a>
+      <a href="mailto:fongfan999@gmail.com?Subject=Hello%20from%20FoxFizz"><span class="white-text email">fongfan999@gmail.com</span></a>
+    </div></li>
+    <li>
+      <a href="#umr" class="waves-effect"><i class="material-icons blue-text">alarm</i>UIT Moodler Reminder</a>
+    </li>
+    <li>
+      <a href="#uesc" class="waves-effect"><i class="material-icons teal-text">event_note</i>UIT ES Creator</a>
+    </li>
+    <li>
+      <a href="#idk" class="waves-effect"><i class="material-icons blue-grey-text">highlight_off</i>I don't know :&#41;&#41;&#41;</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Contact</a></li>
+    <li><a class="waves-effect center-align gh" href="https://github.com/fongfan999">Github (@fongfan999)</a></li>
+    <li><a class="waves-effect center-align tt" href="https://twitter.com/fongfan999">Twitter (@fongfan999)</a></li>
+    <li><a class="waves-effect center-align li" href="https://www.linkedin.com/in/fongfan999/">Linkedin (@fongfan999)</a></li>
+    <li><a class="waves-effect center-align fb" href="https://www.facebook.com/fongfan999">Facebook (@fongfan999)</a></li>
+  </ul>
+
+  <div id="main" >
+    <div id="home">
+      <div class="container center-align">
+        <h3>Hello World!</h3>
+        <hr>
+        <h3>I'm <u>FoxFizz</u>. That's it. :&#41;</h3>
+        <a class="explore btn btn-large waves-effect waves-light" href="#projects">Explore</a>
+      </div>
+
+      <a class="hero-btn btn-floating btn-large white" href="#projects"><i class="material-icons black-text waves-effect">expand_more</i></a>
+    </div>
+
+    <div id="projects" class="card-panel">
+      <div class="row container">
+        <div id="umr" class="col s12 m6 l6">
+          <div class="card hoverable">
+            <div class="card-image blue center-align">
+              <i class="material-icons large white-text">alarm</i>
+              <span class="card-title">UIT Moodle Reminder</span>
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue" href="http://umr.foxfizz.com/" target="_blank"><i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="card-content">
+              <p>A reminder that can notify you the deadlines on Moodle system for UITers only.</p>
+            </div>
+          </div>
+        </div>
+        <div id="uesc" class="col s12 m6 l6">
+          <div class="card hoverable">
+            <div class="card-image teal lighten-1 center-align">
+              <i class="material-icons large white-text">event_note</i>
+              <span class="card-title">UIT ES Creator</span>
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal lighten-1" href="http://uesc.foxfizz.com/" target="_blank"><i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="card-content">
+              <p>A web-application that can create instantly the exam schedule for UITers only.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="idk" class="col s12 m12 l12">
+          <div class="card hoverable">
+            <div class="card-image blue-grey darken-4 center-align">
+              <i class="material-icons large white-text">highlight_off</i>
+              <span class="card-title">IDK :&#41;&#41;&#41;</span>
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue-grey darken-4" href="#" target="_blank"><i class="material-icons">clear</i></a>
+            </div>
+            <div class="card-content">
+              <p>Maybe new thing will go here. Soon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer blue-grey darken-4">
+    <div class="divider"></div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 FoxFizz, Inc
+        <a class="grey-text text-lighten-4 right" target="_blank"  href="https://github.com/search?q=topic:foxfizz">GitHub (@fongfan999)</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    $(function() {
+      $(".button-collapse").sideNav({ edge: 'right' });
+
+      // Smooth scroll anchor link
+      $(document).on('click', 'a', function(event){
+        if ($.attr(this, 'href').charAt(0) == '#') {
+         event.preventDefault();
+
+         $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+       }
+     });
+    });
+
+    $('.close-side-nav').click(function() {
+       $('.button-collapse').sideNav('hide');
+    });
+  </script>
+
+</body>
+</html>
