@@ -1,0 +1,134 @@
+#nav-icon {
+  margin-top: 15px;
+  margin-right: 15px;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+#nav-icon:hover {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#nav-icon i {
+  font-size: 3rem;
+}
+
+#home {
+  padding-top: 120px;
+  background: black url("../images/bg.jpg") center no-repeat fixed;
+  height: 700px;
+}
+
+#home h3 {
+  margin-top: 30px;
+  color: #fff;
+  font-family: Courier, Roboto;
+  line-height: 50px;
+}
+
+h3:last-child {
+
+  background-color: red;
+}
+
+#home hr {
+  max-width: 100px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.explore {
+  margin-top: 100px;
+}
+
+.hero-btn {
+  position: absolute;
+  top: calc(700px - 28px);
+  left: calc(50% - 28px);
+}
+
+#projects {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+}
+
+#projects .card {
+  margin-top: 20px;
+
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+
+#projects .card:hover {
+  -ms-transform: translate(0,-20px);
+  -webkit-transform: translate(0,-20px);
+  transform: translate(0,-20px);
+}
+
+#projects .card:hover i.large {
+ -ms-transform: scale(2);
+ -webkit-transform: scale(2);
+ transform: scale(2);
+}
+
+#projects .card:hover .halfway-fab i {
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#projects .card .card-image {
+  height: 250px;
+}
+
+#projects .card .card-image i.large {
+  line-height: 200px;
+  -webkit-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+#projects .card .card-image .halfway-fab {
+  border: 1px solid #fff;
+}
+
+#projects .card .halfway-fab i {
+  -webkit-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.border-1-white {
+  border: 1px solid #fff;
+}
+
+.close-side-nav {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding-left: 24px;
+}
+
+.close-side-nav i {
+  font-size: 2rem;
+}
+
+.tt i, .gh i, .fb i, .li i {
+  margin-right: 0 !important;
+}
+.tt, .tt i {
+  color: #1da1f2 !important;
+}
+
+.gh, .gh i {
+  color: #211f1f !important;
+}
+
+.fb, .fb i {
+  color: #3b5998 !important;
+}
+
+.li, .li i {
+  color: #007bb6 !important;
+}
