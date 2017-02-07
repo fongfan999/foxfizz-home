@@ -17,7 +17,9 @@
 
 #home {
   padding-top: 120px;
-  background: black url("../images/bg.jpg") center no-repeat fixed;
+  background: black url("../images/bg.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   height: 700px;
 }
 
@@ -131,4 +133,10 @@ h3:last-child {
 
 .li, .li i {
   color: #007bb6 !important;
+}
+
+@media only screen and (min-width: 993px) {
+  #home {
+    background-attachment: fixed;
+  }
 }

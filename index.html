@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <title>Home - FoxFizz</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/materialize.min.css">
@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
   <a id="nav-icon" href="#" data-activates="nav-slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
@@ -100,35 +101,10 @@
     <div class="footer-copyright">
       <div class="container">
         © 2017 FoxFizz, Inc
-        <a class="grey-text text-lighten-4 right" target="_blank"  href="https://github.com/search?q=topic:foxfizz">GitHub (@fongfan999)</a>
+        <a class="grey-text text-lighten-4 right" target="_blank"  href="https://fb.com/foxfizz">Facebook (@foxfizz)</a>
       </div>
     </div>
   </footer>
-  <script>
-    $(function() {
-      $(".button-collapse").sideNav({ edge: 'right' });
-
-      // Smooth scroll anchor link
-      $(document).on('click', 'a', function(event){
-        if ($.attr(this, 'href').charAt(0) == '#') {
-         event.preventDefault();
-
-         $('html, body').animate({
-          scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-       }
-     });
-    });
-
-    $('.persistent').click(function(e) {
-      e.preventDefault();
-    });
-
-    $('.close-side-nav').click(function(e) {
-      e.preventDefault();
-      $('.button-collapse').sideNav('hide');
-    });
-  </script>
 
 </body>
 </html>
