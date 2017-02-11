@@ -71,9 +71,9 @@ h3:last-child {
 }
 
 #projects .card:hover i.large {
- -ms-transform: scale(2);
- -webkit-transform: scale(2);
- transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
 }
 
 #projects .card:hover .halfway-fab i {
@@ -109,11 +109,19 @@ h3:last-child {
   position: absolute;
   top: 5px;
   right: 5px;
-  padding-left: 24px;
+  padding-left: 24px !important;
 }
 
 .close-side-nav i {
   font-size: 2rem;
+  -webkit-transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+
+.close-side-nav:hover i {
+  -ms-transform: rotate(-720deg) scale(1.5);
+  -webkit-transform: rotate(-720deg) scale(1.5);
+  transform: rotate(-720deg) scale(1.5);
 }
 
 .tt i, .gh i, .fb i, .li i {

@@ -11,13 +11,14 @@ $(function() {
     }, 500);
    }
  });
-});
 
-$('.persistent').click(function(e) {
-  e.preventDefault();
-});
+  $('.persistent').click(function(e) {
+    e.preventDefault();
+  });
 
-$('.close-side-nav').click(function(e) {
-  e.preventDefault();
-  $('.button-collapse').sideNav('hide');
+  $('.close-side-nav').click(function(e) {
+    console.log("hii");
+    e.preventDefault();
+    $('.button-collapse').sideNav('hide');
+  });
 });
